@@ -1,0 +1,24 @@
+#This is the text editor
+#The format is as follows:
+#<your text here> = <fontsm for small, fontbig for big, and font for regular>.render("f<text goes here{<variable goes here>}>", True, <color in rgb tuple format>)
+#Variables:
+#Score: the current score
+#prevscore: highscore
+#coin.amount: the amount of coins collected in the current game
+#totalcoins: total coins
+#haw2: same as totalcoins, but better preformance when can be used
+#haw: same as prevscore, but better preformance when can be used
+
+pausetext = font.render("Paused", True, (255, 255, 255))
+text = font.render(f'Score: {score}', True, white)
+text2 = font.render(f'High Score: {prevscore}', True, white)
+text3 = fontsm.render('Press "b" to swap backgrounds.', True, white)
+text4 = fontsm.render('Press number keys or click to swap players.', True, white)
+text5 = fontsm.render('Press "c" to open cosmetics.', True, white)
+text6 = fontbig.render('SPEED UP!', True, torq)
+text8 = font.render('Wait before pausing again', True, (255, 0, 0))
+text7exec = "text7 = font.render(f'Coins: {coin.amount}', True, gold)"
+text9exec = "text9 = font.render(f'Total Coins: {totalcoins}', True, gold)"
+text9exec2 = "text9 = font.render(f': {haw2}', True, gold)"
+textexec = "text = font.render(f'Score: {score}', True, white)"
+text2exec = "text2 = font.render(f'High Score: {haw}', True, white)"
